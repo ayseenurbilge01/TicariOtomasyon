@@ -1,6 +1,6 @@
 ﻿namespace TicariOtomasyon
 {
-    partial class Form1
+    partial class FrmAnaSayfa
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAnaSayfa));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.BtnUrunler = new DevExpress.XtraBars.BarButtonItem();
             this.BtnStoklar = new DevExpress.XtraBars.BarButtonItem();
@@ -74,7 +74,7 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1369, 179);
+            this.ribbonControl1.Size = new System.Drawing.Size(1388, 179);
             // 
             // BtnUrunler
             // 
@@ -106,6 +106,7 @@
             this.BtnMusteriler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnMusteriler.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnMusteriler.Name = "BtnMusteriler";
+            this.BtnMusteriler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMusteriler_ItemClick);
             // 
             // BtnFirmalar
             // 
@@ -235,16 +236,17 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
-            // Form1
+            // FrmAnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1369, 863);
+            this.ClientSize = new System.Drawing.Size(1388, 994);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
-            this.Name = "Form1";
+            this.Name = "FrmAnaSayfa";
             this.Ribbon = this.ribbonControl1;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();

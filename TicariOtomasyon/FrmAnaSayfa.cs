@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TicariOtomasyon
 {
-    public partial class Form1 : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class FrmAnaSayfa : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public Form1()
+        public FrmAnaSayfa()
         {
             InitializeComponent();
         }
@@ -32,6 +32,16 @@ namespace TicariOtomasyon
             }
             
 
+        }
+        FrmMusteriler musteri;
+        private void BtnMusteriler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if(musteri == null)
+            {
+                musteri = new FrmMusteriler();
+                musteri.MdiParent = this;
+                musteri.Show();
+            }
         }
     }
 }
