@@ -117,6 +117,7 @@
             this.BtnFirmalar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnFirmalar.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnFirmalar.Name = "BtnFirmalar";
+            this.BtnFirmalar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnFirmalar_ItemClick);
             // 
             // BtnAnasayfa
             // 
