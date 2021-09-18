@@ -29,7 +29,7 @@ namespace TicariOtomasyon
             da.Fill(dt);
             gridControl1.DataSource = dt;
         }
-        void sehirlistesi()
+        public void sehirlistesi()
         {
             SqlCommand komut = new SqlCommand("Select SEHIR from TBL_ILLER", baglanti.baglanti());
             SqlDataReader dr = komut.ExecuteReader();
